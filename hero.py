@@ -22,5 +22,3 @@ class Warrior(Hero):
 class Charmer(Hero):
     defence_koef = 3
     attack_koef = 2
-
-
