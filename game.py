@@ -1,3 +1,5 @@
+import random
+
 from .hero import Warrior, Charmer
 from .enemy import Skelet, Zombi
 
@@ -22,7 +24,13 @@ class Game:
         return hero_action, enemy_action
 
     def init_enemy(self):
-        # Alexander
+        enemy_choose=random.randint(1,2)
+        if enemy_choose ==1:
+            return Zombi('zombie')
+        else:
+            return Skelet('skelet')
+
+
         pass
 
     def hero_attack(self, enemy_action):
