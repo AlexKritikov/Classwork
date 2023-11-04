@@ -7,6 +7,12 @@ class Hero(Character):
     def defence(self):
        pass
 
+    def chose_action(Hero):
+        result = input("Enter your Action A = Attack or B = Defense")
+        if result == "A":
+            return "Attack"
+        else:
+            return "Defense"
 
 class Warrior(Hero):
     defence_koef = 2
@@ -16,4 +22,5 @@ class Warrior(Hero):
 class Charmer(Hero):
     defence_koef = 3
     attack_koef = 2
+
 
