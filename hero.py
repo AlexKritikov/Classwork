@@ -1,7 +1,7 @@
 from .character import Character
 
 class Hero(Character):
-    def chose_action(Hero):
+    def chose_action(self):
         result = input("Enter your Action A = Attack or B = Defense")
         if result == "A":
             return "Attack"

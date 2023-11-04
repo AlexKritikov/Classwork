@@ -12,8 +12,11 @@ class Game:
         self.enemy = self.init_enemy()
 
     def init_hero(self):
-        # sergiy
-        pass
+        user_choice = input("W if warrior or C if Charmer")
+        if user_choice == "W":
+            return Warrior("Warrior")
+        else:
+            return Charmer("Charmer")
 
 
     def choose_characters_action(self):
