@@ -18,3 +18,9 @@ class Character:
     def defence(self):
        pass
 
+    def is_alive(self):
+        if self.health_value > 0:
+            return True
+        else:
+            return False
+
