@@ -6,7 +6,6 @@ from enemy import Skelet, Zombi
 
 class Game:
     def __init__(self):
-        pass
         # init Hero
         self.hero = self.init_hero()
 
