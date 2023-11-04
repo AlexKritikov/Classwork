@@ -2,10 +2,6 @@ from .character import Character
 import random
 
 class Enemy(Character):
-    def atack(self):
-        pass
-    def defence(self):
-        pass
     def choose_action(self):
         enemy_act = random.randint(1,2)
         if enemy_act == 1:

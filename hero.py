@@ -1,12 +1,6 @@
 from .character import Character
 
 class Hero(Character):
-    def attack(self):
-       pass
-
-    def defence(self):
-       pass
-
     def chose_action(Hero):
         result = input("Enter your Action A = Attack or B = Defense")
         if result == "A":

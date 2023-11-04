@@ -1,18 +1,29 @@
-class Game:
+from .hero import Warrior, Charmer
+from .enemy import Skelet, Zombi
 
-    # init game
+
+class Game:
     def __init__(self):
         pass
         # init Hero
+        self.hero = self.init_hero()
+
         # init Enemy
-        # self.hero = todo
-        # self.enemy = todo
+        self.enemy = self.init_enemy()
+
+    def init_hero(self):
+        # sergiy
+        pass
 
 
     def choose_characters_action(self):
         hero_action = self.hero.choose_action()
         enemy_action = self.enemy.choose_action()
         return hero_action, enemy_action
+
+    def init_enemy(self):
+        # Alexander
+        pass
 
     def hero_attack(self, enemy_action):
         attack_value = self.hero.attack_value
@@ -57,21 +68,3 @@ class Game:
             print(f'Hero {self.hero.name} win!')
         else:
             print(f'Enemy {self.enemy.name} win!')
-
-
-
-
-
-
-
-    # battle
-
-        # choose character
-
-        # choose enemy
-
-        # round -> repeat
-
-        # battle result
-
-    # ?
