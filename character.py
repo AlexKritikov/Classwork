@@ -12,6 +12,8 @@ class Character:
         self.health_value = self.initial_health * self.health_koef
         self.defence_value = self.initial_defence * self.initial_defence
         self.attack_value = self.initial_attack * self.initial_attack
+    def damage(self,value):
+        self.health_value=self.health_value-value
 
     def attack(self):
        pass
