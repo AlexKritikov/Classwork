@@ -1,7 +1,7 @@
 import random
 
-from .hero import Warrior, Charmer
-from .enemy import Skelet, Zombi
+from hero import Warrior, Charmer
+from enemy import Skelet, Zombi
 
 
 class Game:
@@ -39,6 +39,8 @@ class Game:
     def hero_attack(self, enemy_action):
         attack_value = self.hero.attack_value
 
+        print(attack_value, 'A')
+
         if enemy_action == 'Defence':
             attack_value -= self.enemy.defence_value
 
@@ -69,7 +71,7 @@ class Game:
         if hero_action == 'Attack':
             self.hero_attack(enemy_action)
 
-        if self.enemy.is_alive(self):
+        if self.enemy.is_alive():
             if enemy_action == 'Attack':
                 self.enemy_attack(hero_action)
 

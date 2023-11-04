@@ -10,15 +10,16 @@ class Character:
     def __init__(self, name):
         self.name = name
         self.health_value = self.initial_health * self.health_koef
-        self.defence_value = self.initial_defence * self.initial_defence
-        self.attack_value = self.initial_attack * self.initial_attack
-    def damage(self,value):
-        self.health_value=self.health_value-value
+        self.defence_value = self.initial_defence * self.defence_koef
+        self.attack_value = self.initial_attack * self.attack_koef
 
-    def attack(self):
-       pass
-    def defence(self):
-       pass
+    def damage(self, value):
+        print(f'{self.name} will get damage {value}. Health was:'
+              f' {self.health_value}')
+
+        self.health_value = self.health_value - value
+
+        print(f'{self.name} got damage {value}. Health left: {self.health_value}')
 
     def is_alive(self):
         if self.health_value > 0:

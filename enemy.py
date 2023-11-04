@@ -1,4 +1,4 @@
-from .character import Character
+from character import Character
 import random
 
 class Enemy(Character):
@@ -13,6 +13,7 @@ class Enemy(Character):
 class Zombi(Enemy):
     defence_koef = 1
     attack_koef = 4
+
 class Skelet(Enemy):
     defence_koef = 2
     attack_koef = 3
